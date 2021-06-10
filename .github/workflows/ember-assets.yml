@@ -11,6 +11,6 @@ jobs:
     - uses: actions/checkout@v2-beta
       with:
         fetch-depth: 0
-    - uses: simplabs/ember-asset-size-action@use-npm-7
+    - uses: Techn1x/ember-asset-size-action@boverton/edit-existing-comment
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
