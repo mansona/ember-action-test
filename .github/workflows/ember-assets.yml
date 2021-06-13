@@ -8,9 +8,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - run: node -v
     - uses: actions/checkout@v2-beta
       with:
         fetch-depth: 0
-    - uses: Techn1x/ember-asset-size-action@boverton/edit-existing-comment
+    - uses: simplabs/ember-asset-size-action@update-dependencies
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
